@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'nexa light';
+	src: url("../fonts/Nexa Light.otf");
+}
+
+@font-face {
+	font-family: 'nexa bold';
+	src: url("../fonts/Nexa Bold.otf");
+}
+
+#textb {
+	font-family: 'nexa bold';
+}
