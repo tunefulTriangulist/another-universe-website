@@ -67,7 +67,7 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
     	layout: null,
-    	statusCode: res.status,
+    	statusCode: (err.status || 500),
         message: err.message,
         error: {}
     });
