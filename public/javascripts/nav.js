@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	if ($(this).scrollTop() > scrollChange) {
+		$("#navcontent a").css({"color": "black", "border-color":"rgba(0, 0, 0, 0.6)"});
+	}
 	var nav1 = function() {	// start tooltip blinking
 		$("#navtext").animate({"opacity":0.6}, 500, nav2);
 	}
@@ -21,5 +24,14 @@ $(document).ready(function() {
 		$("#nav").animate({"opacity":1}, 220, "linear");
 		$("#navcontent").slideUp("medium");
 		$("#navtext").css({"display":"none"});
+	});
+	$(document).scroll(function() {
+		var scroll = $(this).scrollTop();
+		if (scroll > scrollChange) {
+			$("#navcontent a").css({"color": "black", "border-color":"rgba(0, 0, 0, 0.6)"});
+		}
+		else {
+			$("#navcontent a").css({"color": "white", "border-color":"rgba(255, 255, 255, 0.6)"});
+		}
 	});
 })
