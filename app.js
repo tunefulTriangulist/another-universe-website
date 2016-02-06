@@ -57,7 +57,7 @@ if (app.get('env') === 'development') {
             message: err.message,
             error: err
         });*/
-    	res.send(statusCode, err);
+    	res.send(err.status, err.stack);
     });
 }
 
@@ -71,7 +71,7 @@ app.use(function(err, req, res, next) {
         message: err.message,
         error: {}
     });*/
-	res.send(statusCode, err);
+	res.send(err.status, err.stack);
 });
 
 
