@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/contestrules', function(req, res) {
-  res.render('contestRules', { layout: "content" });
+  res.render('contestrules', { layout: "content" });
 });
 
 module.exports = router;
