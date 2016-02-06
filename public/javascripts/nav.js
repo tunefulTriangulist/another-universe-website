@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	var w = $("#nav").width();	// set 1:1 aspect ratio for nav
-	$("#nav").css({"height":w+"px"});
-	
 	var nav1 = function() {	// start tooltip blinking
 		$("#navtext").animate({"opacity":0.6}, 500, nav2);
 	}
@@ -20,7 +17,7 @@ $(document).ready(function() {
 	});
 
 	$("#clickme").click(function() {
-		$("#nav").css({"display":"inline"});
+		$("#nav").css({"display":"block"});
 		$("#nav").animate({"opacity":1}, 220, "linear");
 		$("#navcontent").slideUp("medium");
 		$("#navtext").css({"display":"none"});

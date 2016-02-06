@@ -1,13 +1,16 @@
 #nav {
 	bottom:0;
 	left:0;
-	margin:0 0 2.5% 2.5%;
+	margin:0 0 0 2.5%;
 	padding:0;
 	width:13%;
+	height:0;
+	padding-bottom:20%;
 	position:fixed;
 	background: url("../images/logo.png") center no-repeat;
 	background-size:100% auto;
 	z-index:2;
+	display:block;
 	transition:opacity 0.3s;
 }
 
