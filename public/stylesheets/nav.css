@@ -5,7 +5,7 @@
 	padding:0;
 	width:13%;
 	height:0;
-	padding-bottom:20%;
+	padding: 0 0 20% 0;
 	position:fixed;
 	background: url("../images/logo.png") center no-repeat;
 	background-size:100% auto;
@@ -21,10 +21,10 @@
 }
 
 #navtext {
-	top:-30%;
+	top:0%;
 	left:50%;
 	position:absolute;
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	z-index:1;
 	color:white;
 	padding:10px;
