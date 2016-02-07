@@ -27,7 +27,7 @@ var handlebars = require('express-handlebars').create(
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
-app.use(favicon());
+app.use(favicon(path.join(__dirname, 'public/images/logo.png')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
