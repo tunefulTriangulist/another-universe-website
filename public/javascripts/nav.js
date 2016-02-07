@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	var h = (/universefade/.test($("#header").css("background-image"))) ? $("#header").height() / 2 : $("#header").height();
+	var scrollChange = h - ($(window).height() - $("#navcontent").height());
 	if ($(this).scrollTop() > scrollChange) {
 		$("#navcontent a").css({"color": "black", "border-color":"rgba(0, 0, 0, 0.6)"});
 	}
